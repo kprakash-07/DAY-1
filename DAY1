@@ -17,15 +17,23 @@ Constraints:
 
 CODE:
 
-   T=int(input())
-for i in range(T):
-    result=0
-    N,M=map(int,input().split())
-    result=N-M
-    if(result<0):
-        print('0')
-    else:
-        print(result)
+
+t=int(input()) 
+
+out=[]
+
+for i in range(t):
+
+     n,m=map(int,input().split())
+
+      out.append((n,m))
+
+for n,m in out:
+    
+   if(n>m):
+      print(n-m)
+   else:
+      print("0")
 
 Sample input:
 4
